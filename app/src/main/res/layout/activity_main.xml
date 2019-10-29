@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_province"
+        android:layout_width="413dp"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/surint_img" />
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="กรุณาเลือกจังหวัด"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_province" />
+
+    <TextView
+        android:id="@+id/tv_history"
+        android:layout_width="297dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_header" />
+
+    <Button
+        android:id="@+id/btn_surint"
+        android:layout_width="66dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/btn_surint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_sakonnacon" />
+
+    <Button
+        android:id="@+id/btn_puttalung"
+        android:layout_width="71dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/btn_puttalung"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_chainat"
+        app:layout_constraintEnd_toEndOf="@+id/tv_history"
+        app:layout_constraintStart_toEndOf="@+id/btn_chainat" />
+
+    <Button
+        android:id="@+id/btn_sakonnacon"
+        android:layout_width="76dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/btn_sakonnacon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_history" />
+
+    <Button
+        android:id="@+id/btn_chainat"
+        android:layout_width="69dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/btn_chainat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_surint" />
+</androidx.constraintlayout.widget.ConstraintLayout>
